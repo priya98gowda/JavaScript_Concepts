@@ -1,0 +1,22 @@
+/* .demo{
+    border: 1px solid red;
+    background: antiquewhite;
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+    color: crimson;
+    font-weight: 600;
+} */
+
+.randomtext{
+    color: darkgoldenrod;
+    text-align: justify;
+    border: 1px solid brown;
+    background: black;
+}
+.randomtext1{
+    color:brown;
+    text-align: justify;
+    border: 1px solid blue5d;
+    background: black;
+}

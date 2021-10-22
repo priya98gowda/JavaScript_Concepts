@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("Let's Rock");
+        var name = 'Alia';
+        console.log("name" ,"", name);
+        var age = 28;
+        console.log('age' ,"", age);
+        var isMarried = 'false';
+        console.log("isMarried" ,"", isMarried);
+        var x;
+        console.log("x","", x,typeof(x));
+        var y = null;
+        console.log("y","",y,typeof(y));
+    </script>
+</head>
+<body>
+  <script>
+      var person = {
+          firstName : `Priya`,
+          lastName : "gowda",
+          age : 20,
+          color : "red",
+          fullName : function (){
+              return this.firstName + " "+this.lastName
+          }
+        }
+        console.log("First Name is","",person.firstName );
+        console.log("Last Name is","",person.lastName);
+        console.log("Age is","",person.age);
+        console.log("Color is","",person.color);
+        console.log("Full Name is","",person.fullName());
+
+        console.log("=====================================");
+         
+        console.log("First Name is","",person["firstName"]);
+        console.log("Last Name is","",person["lastName"]);
+        console.log("Age is","",person["age"]);
+        console.log("Color is","",person["color"]);
+        console.log("Full Name is","",person["fullName"]());
+
+        console.log("===================================");
+
+        var car = new Object();
+        car.name = "BMW"
+        car.color = "Black"
+        car.price = 160000.99
+
+        console.log("Name", "",car.name);
+        console.log("Color", "",car.color);
+        console.log("Price", "",car.price);
+
+        console.log("==========operators==========");
+
+        var data = '12';
+        var number = 12;
+        if (data === number) {
+            console.log("Equal");
+        } else {
+            console.log("Not Equal");
+        }
+
+        console.log("========ternary operator========");
+        var age= 12;
+        (age>=18)?console.log("eligible for voting") : console.log("not eligbile for voting");
+
+        var percentage = 35;
+        typeof percentage !=="number" || percentage<0 || percentage>100 ? console.log("Invalid"):
+         percentage>=70? console.log("Distinction"):    
+         percentage>=35?console.log("Pass"): console.log("fail")
+
+         console.log("================");
+         var x= undefined;
+         console.log("Type of X"+ " " + typeof(x));
+         var y = null;
+         console.log("Type of Y"+ " " + typeof(y));
+
+          console.log("================");
+         var data = null;
+         if (typeof(data)!== null) {
+             console.log("true");
+         } else {
+             console.log("false");
+         }
+
+
+         console.log("=======BMI============");
+         var height = 6;
+         var weight = 95;
+         var BMI = weight/(height*height);
+         console.log(BMI);
+         BMI>30? console.log("Obasity"):BMI>24.9? console.log("OverWeight") : BMI>=18.6?console.log("NormalWeight"): console.log("UnderWeight");
+
+        </script>
+</body>
+</html>
